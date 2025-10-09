@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>Happy Birthday Sanket - A Cosmic Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <section id="landing-page" class="page active">
+        <div class="stars-background"></div>
+        <div class="floating-particles"></div>
+        
+        <div class="landing-content">
+            <div class="saturn-container">
+                <div class="saturn-planet" id="saturn-entry">
+                    <div class="planet-body"></div>
+                    <div class="ring ring-1"></div>
+                    <div class="ring ring-2"></div>
+                    <div class="ring ring-3"></div>
+                </div>
+            </div>
+            
+            <div class="landing-text">
+                <h1>A universe of memories awaits… ✨🌌</h1>
+                <p class="click-instruction">Click Saturn to begin your cosmic journey</p>
+            </div>
+        </div>
+        
+        <div class="floating-comets"></div>
+    </section>
+
+    <!-- Planet Messages Page -->
+    <section id="planets-page" class="page">
+        <div class="stars-background"></div>
+        <div class="floating-particles"></div>
+        
+        <div class="planets-container">
+            <div class="planet-item" data-planet="jupiter">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg" alt="Jupiter" class="planet-image">
+                <span class="planet-name">Jupiter</span>
+            </div>
+            
+            <div class="planet-item" data-planet="saturn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" alt="Saturn" class="planet-image">
+                <span class="planet-name">Saturn</span>
+            </div>
+            
+            <div class="planet-item" data-planet="mars">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars" class="planet-image">
+                <span class="planet-name">Mars</span>
+            </div>
+            
+            <div class="planet-item" data-planet="neptune">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg" alt="Neptune" class="planet-image">
+                <span class="planet-name">Neptune</span>
+            </div>
+            
+
+        </div>
+        
+        <div class="progress-indicator">
+            <span id="progress-text">Explore the planets to unlock memories</span>
+            <div class="progress-dots">
+                <span class="dot" data-planet="jupiter"></span>
+                <span class="dot" data-planet="saturn"></span>
+                <span class="dot" data-planet="mars"></span>
+                <span class="dot" data-planet="neptune"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Letter Page -->
+    <section id="letter-page" class="page">
+        <div class="stars-background"></div>
+        <div class="galaxy-background"></div>
+        <canvas id="stardust-canvas"></canvas>
+        
+        <div class="letter-container">
+            <div class="constellation-card">
+                <div class="letter-content">
+                    <h2>Dear Sanket,</h2>
+                    <p>Since childhood, we've traveled through the same orbit—sometimes side by side, sometimes far, yet always connected by the same gravity of friendship. Sixteen years have passed, and still, you remain one of the brightest constants in my sky.</p>
+                    
+                    <p>You've always carried the wonder of the universe within you—the curiosity, the depth, the dreams that stretch beyond horizons. Like a planet steady in its course, you remind me of strength, loyalty, and quiet brilliance.</p>
+                    
+                    <p>On this birthday, I just want to celebrate the cosmos that is you. May your future be vast, like galaxies unfolding. May your dreams be infinite, like the stars above. And may our friendship continue to orbit through time, unbroken, shining.</p>
+                    
+                    <div class="signature">
+                        <p><strong>Happy Birthday, brother.</strong></p>
+                        <p class="author">— Harshal Nikumbh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Planet Messages -->
+    <div id="planet-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-planet-name"></h3>
+                <button class="modal-close" id="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="modal-message"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
